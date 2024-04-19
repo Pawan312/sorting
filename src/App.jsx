@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import Bar from "./Components/Bar";
 
 function App() {
-  const arr = [30, 1, 14, 20, 5];
+  const n = 10;
+  const a = 1;
+  const b = 30;
+  const arr = Array.from({ length: n }, () => Math.floor(Math.random() * (b - a + 1)) + a);
+  console.log(arr);
 
 
   const [brr, setBrr] = useState(arr);
